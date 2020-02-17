@@ -21,3 +21,9 @@ def prod(l: List[int]) -> int:
     if len(l) > 0:
         return l[0] * prod(l[1:])
     return 1
+
+# compute fibonnaci number
+def fib(n: int) -> int:
+    if n == 0: return 0
+    if n == 1: return 1
+    return fib(n-1) + fib(n-2)
