@@ -27,3 +27,12 @@ def fib(n: int) -> int:
     if n == 0: return 0
     if n == 1: return 1
     return fib(n-1) + fib(n-2)
+
+def fast_fib(n: int) -> int:
+    cache = {}
+    def r_fib(n: int) -> int:
+        if n in cache:
+            return cache[n]
+        if n < 2: return n
+        return r_fib(n-1) + r_fib(n-2)
+    return r_fib(n)
