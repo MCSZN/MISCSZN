@@ -34,5 +34,7 @@ def fast_fib(n: int) -> int:
         if n in cache:
             return cache[n]
         if n < 2: return n
-        return r_fib(n-1) + r_fib(n-2)
+        result = r_fib(n-1) + r_fib(n-2)
+        cache[n] = result
+        return result
     return r_fib(n)
