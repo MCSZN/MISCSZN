@@ -1,7 +1,6 @@
 # To download all the springer books automatically
 from subprocess import run
-from typing import Optional, List, Callable
-from multiprocessing import Pool, cpu_count
+from typing import Optional, List
 import os
 try:
     import pandas as pd
