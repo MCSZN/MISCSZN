@@ -6,6 +6,7 @@ try:
     import pandas as pd
 except ImportError:
     run(['pip', 'install', 'pandas', 'xlrd'])
+    import pandas as pd
 
 def download(link: str, title: str, books : set) -> None:
     """
